@@ -1,0 +1,36 @@
+.films {
+    width: 301px;
+    margin: 15px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    background: rgba(18, 18, 18, 0.5);
+    cursor: pointer;
+
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 5px;
+        font-size: 18px;
+    }
+
+    .films-info {
+        padding: 0 15px;
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .show-less {
+            a {
+                color: white;
+                font-style: italic;
+            }
+        }
+    }
+}

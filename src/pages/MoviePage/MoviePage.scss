@@ -1,0 +1,37 @@
+.go-to-back {
+    margin: 25px;
+
+    svg {
+        font-size: 28px;
+        color: greenyellow;
+        cursor: pointer;
+    }
+}
+
+.movie-page {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .movie-page-img {
+        margin-right: 25px;
+    }
+
+    .movie-page-desc {
+        width: 750px;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-weight: 400;
+            color: gray;
+
+            b {
+                color: white;
+            }
+        }
+    }
+}

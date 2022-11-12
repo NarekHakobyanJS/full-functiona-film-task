@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import NavBarContainer from './components/Navbar/NavBarContainer';
+import FilterPageContainer from './pages/FilterPage/FilterPageContainer';
+import HomePageContainer from './pages/HomePage/HomePageContainer';
+import MoviePageContainer from './pages/MoviePage/MoviePageContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <NavBarContainer />
+      <div className='main-contnet'>
+        <Routes>
+          <Route path='/' element={<HomePageContainer />} />
+          <Route path='/movie' element={<MoviePageContainer />} />
+          <Route path='/filter' element={<FilterPageContainer />} />
+        </Routes>
+      </div>
     </div>
   );
 }
